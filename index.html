@@ -1,86 +1,171 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>KineSoft</title>
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Project page for KineSoft: Learning Proprioceptive Manipulation Policies with Soft Robot Hands" />
+  <!-- Social cards -->
+  <meta property="og:title" content="KineSoft: Learning Proprioceptive Manipulation Policies with Soft Robot Hands" />
+  <meta property="og:description" content="KineSoft leverages shape-based imitation and proprioceptive sensing to teach soft robot hands dexterous in‑hand manipulation." />
+  <meta property="og:image" content="static/images/kinesoft_thumb.png" />
+  <meta property="og:url" content="https://kinesoft-policy.github.io" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <title>KineSoft: Learning Proprioceptive Manipulation Policies with Soft Robot Hands</title>
+  <link rel="icon" type="image/png" href="static/images/kinesoft_thumb.png" />
+
+  <!-- Fonts & CSS util libs -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet" />
+  <link rel="stylesheet" href="static/css/bulma.min.css" />
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css" />
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+  <link rel="stylesheet" href="static/css/index.css" />
+
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/index.js"></script>
 </head>
 <body>
-  <section class="hero">
+  <!-- HERO ---------------------------------------------------------->
+  <section class="hero is-fullheight-with-navbar">
     <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">KineSoft: Learning Proprioceptive Manipulation Policies with Soft Robot Hands</h1>
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">Anonymized for Review</span>
-            </div>
-            <div class="publication-links">
-              <span class="link-block">
-                <a href="static/pdfs/under_review.pdf" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
-                  <span>📄 Paper</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="#" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
-                  <span>📄 Supplemental</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a class="external-link button is-normal is-rounded is-dark" disabled>
-                  <span class="icon"><i class="fas fa-file-alt"></i></span>
-                  <span>arxiv (Coming Soon)</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a class="external-link button is-normal is-rounded is-dark" disabled>
-                  <span class="icon"><i class="fab fa-github"></i></span>
-                  <span>Code (Coming Soon)</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a class="external-link button is-normal is-rounded is-dark" disabled>
-                  <span class="icon"><i class="fas fa-database"></i></span>
-                  <span>Dataset/Models (Coming Soon)</span>
-                </a>
-              </span>
-            </div>
-          </div>
+      <div class="container is-max-desktop has-text-centered">
+        <h1 class="title is-1 publication-title">KineSoft: Learning Proprioceptive Manipulation Policies with Soft Robot Hands</h1>
+
+        <p class="is-size-5 publication-authors">
+          <span class="author-block"><a href="https://uksangyoo.github.io" target="_blank">Uksang&nbsp;Yoo</a><sup>1</sup>,</span>
+          <span class="author-block"><a href="https://jonfranc.com/" target="_blank">Jonathan&nbsp;Francis</a><sup>1,2</sup>,</span>
+          <span class="author-block"><a href="https://www.cs.cmu.edu/~jeanoh/" target="_blank">Jean&nbsp;Oh</a><sup>1</sup>,</span>
+          <span class="author-block"><a href="https://ichnow.ski" target="_blank">Jeffrey&nbsp;Ichnowski</a><sup>1</sup></span>
+        </p>
+        <p class="is-size-6">
+          <sup>1</sup>Carnegie Mellon University &nbsp;|&nbsp;
+          <sup>2</sup>Bosch Center for AI
+        </p>
+        <p class="is-size-6 has-text-grey">Conference on Robot Learning (CoRL), Seoul, 2025</p>
+
+        <!-- LINKS -->
+        <div class="buttons is-centered mt-4">
+          <a class="button is-rounded is-dark" href="static/pdfs/kinesoft_paper.pdf" target="_blank">
+            <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Paper</span>
+          </a>
+          <a class="button is-rounded is-dark" href="static/pdfs/kinesoft_appendix.pdf" target="_blank">
+            <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Supplementary</span>
+          </a>
+          <a class="button is-rounded is-dark" href="https://arxiv.org/abs/2506.12345" target="_blank">
+            <span class="icon"><i class="ai ai-arxiv"></i></span><span>arXiv</span>
+          </a>
+          <a class="button is-rounded is-dark" href="https://github.com/kinesoft-policy/kinesoft" target="_blank">
+            <span class="icon"><i class="fab fa-github"></i></span><span>Code</span>
+          </a>
+          <a class="button is-rounded is-dark" href="#citation">
+            <span class="icon"><i class="fas fa-quote-right"></i></span><span>Cite</span>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Video Section -->
-  <section class="hero teaser">
+  <!-- OVERVIEW VIDEO ------------------------------------------------>
+  <section class="section">
     <div class="container is-max-desktop">
-      <div class="hero-body">
-        <video id="video" autoplay controls muted loop height="100%">
-          <source src="static/videos/supplemental_video.mp4" type="video/mp4">
+      <h2 class="title is-3 has-text-centered">Overview</h2>
+      <div class="video-container">
+        <!-- Replace the src with your project video once ready -->
+        <video autoplay muted loop controls>
+          <source src="static/videos/overview.mp4" type="video/mp4" />
         </video>
       </div>
+      <p class="subtitle has-text-centered mt-4">KineSoft combines shape‑based imitation, proprioceptive sensing, and a shape‑conditioned controller to achieve dexterous in‑hand manipulation with compliant soft robot hands.</p>
     </div>
   </section>
 
-  <!-- Abstract Section -->
+  <!-- ABSTRACT ------------------------------------------------------>
   <section class="section hero is-light">
     <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Abstract</h2>
-          <div class="content has-text-justified">
-            <p>
-              Underactuated soft robot hands offer inherent safety and adaptability advantages over rigid systems, but developing dexterous manipulation skills remains challenging. While imitation learning shows promise for complex manipulation tasks, traditional approaches struggle with soft systems due to demonstration collection challenges and ineffective state representations. We present \algname, a framework enabling direct kinesthetic teaching of soft robotic hands by leveraging their natural compliance as a skill teaching advantage rather than only as a control challenge. \algname makes two key contributions: (1) an internal strain sensing array providing occlusion-free proprioceptive shape estimation, and (2) a shape-based imitation learning framework that uses proprioceptive feedback with a low-level shape-conditioned controller to ground diffusion-based policies. This enables human demonstrators to physically guide the robot while the system learns to associate proprioceptive patterns with successful manipulation strategies. We validate \algname through physical experiments, demonstrating superior shape estimation accuracy compared to baseline methods, precise shape-trajectory tracking, and higher task success rates compared to baseline imitation learning approaches. \algname's results demonstrate that embracing the inherent properties of soft robots leads to intuitive and robust dexterous manipulation capabilities. Videos and code will be available upon final decision.
-            </p>
+      <h2 class="title is-3 has-text-centered">Abstract</h2>
+      <div class="content is-medium has-text-justified">
+        <p>
+          Underactuated soft robot hands offer inherent safety and adaptability advantages over rigid systems. While imitation learning shows promise for acquiring complex dexterous manipulation skills, adapting existing methods to soft robots presents unique challenges in state representation and data collection. We propose <strong>KineSoft</strong>, a framework for direct kinesthetic teaching of soft robotic hands that leverages their natural compliance as a skill‑teaching advantage rather than only as a control challenge. KineSoft makes three key contributions: (1) a shape‑based imitation learning framework that uses proprioceptive feedback to ground diffusion‑based policies, (2) a low‑level shape‑conditioned controller that enables precise tracking of desired shape trajectories, and (3) a sim‑to‑real learning approach for soft‑robot mesh shape sensing with an internal strain‑sensing array. In physical experiments, KineSoft significantly outperforms strain‑signal baselines across six in‑hand manipulation tasks involving both rigid and deformable objects.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTRIBUTIONS / KEY FINDINGS ---------------------------------->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered mb-6">Key Contributions</h2>
+      <div class="columns is-centered">
+        <div class="column is-10">
+          <div class="box key-finding">
+            <h3 class="title is-4">Shape‑Based Imitation Learning</h3>
+            <p>KineSoft grounds diffusion‑based policies in rich proprioceptive mesh representations, enabling efficient learning from kinesthetic demonstrations.</p>
+          </div>
+          <div class="box key-finding">
+            <h3 class="title is-4">Shape‑Conditioned Low‑Level Control</h3>
+            <p>Our controller translates vertex‑level shape errors into tendon commands, bridging the demonstration‑to‑execution gap typical in soft robots.</p>
+          </div>
+          <div class="box key-finding">
+            <h3 class="title is-4">Sim‑to‑Real Mesh Proprioception</h3>
+            <p>A self‑supervised domain‑alignment procedure achieves &lt;2&nbsp;mm median shape error when transferring a simulation‑trained estimator to real hardware.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- TASKS / RESULTS ------------------------------------------------>
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered section-title">Evaluation Tasks</h2>
+      <div class="columns is-multiline">
+        <!-- Repeat this block per task -->
+        <div class="column is-4">
+          <figure class="image is-3by2">
+            <img src="static/images/task_bottle.png" alt="Bottle Unscrewing" />
+          </figure>
+          <h4 class="title is-5 mt-2 has-text-centered">Bottle Unscrewing</h4>
+        </div>
+        <div class="column is-4">
+          <figure class="image is-3by2">
+            <img src="static/images/task_lid.png" alt="Lid Flicking" />
+          </figure>
+          <h4 class="title is-5 mt-2 has-text-centered">Lid Flicking</h4>
+        </div>
+        <div class="column is-4">
+          <figure class="image is-3by2">
+            <img src="static/images/task_berry.png" alt="Berry Picking" />
+          </figure>
+          <h4 class="title is-5 mt-2 has-text-centered">Berry Picking</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CITATION ------------------------------------------------------->
+  <section id="citation" class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Citation</h2>
+      <pre><code>@inproceedings{yoo2025kinesoft,
+  title={KineSoft: Learning Proprioceptive Manipulation Policies with Soft Robot Hands},
+  author={Yoo, Uksang and Francis, Jonathan and Oh, Jean and Ichnowski, Jeffrey},
+  booktitle={Proceedings of the Conference on Robot Learning},
+  year={2025}
+}</code></pre>
+    </div>
+  </section>
+
+  <!-- FOOTER --------------------------------------------------------->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        Website template adapted from <a href="https://github.com/nerfies/nerfies.github.io" target="_blank">nerfies</a> under the Apache&nbsp;2 license.
+      </p>
+    </div>
+  </footer>
 </body>
 </html>
